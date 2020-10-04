@@ -486,11 +486,11 @@
                             <h2 id="titleForm">Fale Conosco</h2>
                             <center>                     
                             <label class="col-sm-10 col-form-label">* campos obrigatórios</label>
-                            <form>
-                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true" id="whiteIconInput"></i><input type="email" class="orangeForm" placeholder="Email *" id="sizeForm" required></span>
-                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-phone" aria-hidden="true" id="whiteIconInput"></i><input type="text" class="orangeForm" placeholder="Telefone" id="sizeForm"></span>
-                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-comment-o" aria-hidden="true" id="whiteIconInput"></i><input type="text" class="orangeForm" placeholder="Assunto *" id="sizeForm" required></span>
-                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-commenting-o" aria-hidden="true" id="whiteIconInput"></i><textarea type="text" class="orangeForm" placeholder="Mensagem *" id="sizeForm" required></textarea></span>
+                            <form method="POST" action="./email.php">
+                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true" id="whiteIconInput"></i><input type="email" class="orangeForm" placeholder="Email *" id="sizeForm" name="email" required></span>
+                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-phone" aria-hidden="true" id="whiteIconInput"></i><input type="text" class="orangeForm" placeholder="Telefone" id="sizeForm" name="phoneNumber" ></span>
+                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-comment-o" aria-hidden="true" id="whiteIconInput"></i><input type="text" class="orangeForm" placeholder="Assunto *" id="sizeForm" name="subject" required></span>
+                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-commenting-o" aria-hidden="true" id="whiteIconInput"></i><textarea type="text" class="orangeForm" placeholder="Mensagem *" id="sizeForm" name="mesage" required></textarea></span>
                             </center>
                                 <button type="submit" class="btn efeitobtn mt-2" id="orangeColor"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>  Enviar</button>
                             </form>
