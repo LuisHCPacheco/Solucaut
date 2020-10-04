@@ -11,10 +11,10 @@
     $header = "From: emailContato@solucaut.com"."\n"."Reply-To:".$email."\n"."X=Mailer:PHP/".phpversion();
 
     if(mail($to,$subject,$body,$header)){
-        echo("Email enviado com sucesso!");
+        echo '<script>alert("Email enviado com sucesso!");</script>';
+        echo '<script> window.location.href = "./index.html";</script>';
     }else{
-        echo("O email não pode ser enviado!");
+        echo '<script>alert("Erro ao enviar o email!");</script>';
+        echo '<script> window.location.href = "./index.html";</script>';
     }
-
-
 ?>
