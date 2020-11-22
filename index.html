@@ -5,6 +5,7 @@
         <link rel="shortcut icon" href="img/icon.png">
 
         <meta charset="utf-8"/>
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,35 +20,79 @@
 
     <body>
         <!-- Navbar Principal -->
-        <div id="navbarDiv">
-            <nav id="navbar">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkIcons">
-                    <i class="fa fa-bars" id="btn" onClick="deleteContent()"></i>
-                    <i class="fa fa-times" id="cancel" onClick="returnContent()"></i>
-                </label>
-                <img src="img/icon.png" alt="SolucautIcon" id="solucautIconMenu">
-                <ul id="linksNavbar">
-                    <label class="navLinks" id="navLinks">
-                        <li><img src="img/icon.png" alt="SolucautIcon" id="solucautIconNavbar"></li>
-                        <li id="item1"><a href="#whoWeAre" id="effect">Quem Somos</a></li>
-                        <li id="item2"><a href="#services" id="effect">Nossos Serviços</a></li>
-                        <li id="item3"><a href="#cases" id="effect">Cases</a></li>
-                        <li id="item4"><a href="#contact" id="effect">Contato</a></li>
-                        <li id="item5"><a href="#" id="effect">Blog</a></li>
-                    </label>
-                    <li class="socialMedias">
-                        <a class="mr-3" id="widthIcon" href="https://www.facebook.com/solucaut/" target="_blank">
-                            <i class="fa fa-facebook"></i>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                <div class="container">
+                    <div class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/icon.png" alt="LogoSolucaut" id="iconNavbar">
                         </a>
-                        <a class="mr-3" id="widthIcon" href="https://www.instagram.com/solucaut_ej/" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                        <a class="" id="widthIcon" href="https://br.linkedin.com/organization-guest/company/solucaut?challengeId=AQEqF9G47bhaswAAAXNnZlfr6x_UblpDz8tGJ7pAUEhYhpgijpCxtmuVraU7iXSC0UpUXdwY1rbHm0EO57cPMWro9lHp_aDsWQ&submissionId=60af9659-812c-2316-c6b4-80fa0662fc60" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
+    
+                        <button class="navbar-toggler" type="button" onclick="openNav()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="navbarSite">
+                            <ul class="navbar-nav mr-auto ml-auto navLinks">
+                                <li class="nav-item mt-1">
+                                    <a class="nav-link" href="#whoWeAre" id="whiteColor">Quem Somos</a>
+                                </li>
+                                <li class="nav-item mt-1">
+                                    <a class="nav-link" href="#services" id="whiteColor">Nossos Serviços</a>
+                                </li>
+                                <li class="nav-item mt-1">
+                                    <a class="nav-link" href="#cases" id="whiteColor">Cases</a>
+                                </li>
+                                <li class="nav-item mt-1">
+                                    <a class="nav-link" href="#contact" id="whiteColor">Contato</a>
+                                </li>
+                                <li class="nav-item mt-1">
+                                    <a class="nav-link" href="#" id="whiteColor">Blog</a>
+                                </li>
+                            </ul>
+    
+                            <ul class="navbar-nav socialMedias ml-md-3 ml-sm-2 mt-md-1 mt-sm-1">
+                                <li class="nav-item mt-1">
+                                    <a class="ml-3 efeito" href="https://www.facebook.com/solucaut/" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a class="ml-3 efeito" href="https://www.instagram.com/solucaut_ej/" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a class="ml-3 efeito" href="https://br.linkedin.com/organization-guest/company/solucaut?challengeId=AQEqF9G47bhaswAAAXNnZlfr6x_UblpDz8tGJ7pAUEhYhpgijpCxtmuVraU7iXSC0UpUXdwY1rbHm0EO57cPMWro9lHp_aDsWQ&submissionId=60af9659-812c-2316-c6b4-80fa0662fc60" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a><img src="img/icon_white.png" alt="LogoSolucaut" id="iconNavbar"></a>
+                    <a href="#whoWeAre" onclick="closeNav()">Quem Somos</a>
+                    <a href="#services" onclick="closeNav()">Nossos Serviços</a>
+                    <a href="#cases" onclick="closeNav()">Cases</a>
+                    <a href="#contact" onclick="closeNav()">Contato</a>
+                    <a href="#" onclick="closeNav()">Blog</a>
+
+                    <center>
+                    <ul id="socialMediasSidebar">
+                        <li>
+                            <a class="ml-3" href="https://www.facebook.com/solucaut/" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="ml-3" href="https://www.instagram.com/solucaut_ej/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a class="ml-3" href="https://br.linkedin.com/organization-guest/company/solucaut?challengeId=AQEqF9G47bhaswAAAXNnZlfr6x_UblpDz8tGJ7pAUEhYhpgijpCxtmuVraU7iXSC0UpUXdwY1rbHm0EO57cPMWro9lHp_aDsWQ&submissionId=60af9659-812c-2316-c6b4-80fa0662fc60" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    </center>
+                </div>
             </nav>
         </div>
 
@@ -55,7 +100,7 @@
         <div id="allContentSite">
             <!-- Carousel -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" id="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel" data-slide-to="1"></li>
                     <li data-target="#carousel" data-slide-to="2"></li>
@@ -113,36 +158,39 @@
                     
                     <div class="row">
                         <div class="col-md-4">
-                            <a data-toggle="modal" data-target="#modalHistoria" href="#modalHistoria">
+                            <a data-toggle="modal" data-target="#modalHistoria" href="#modalHistoria" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/historia.png" alt="Cardimg">
-                            </a>
+                            
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Nossa história</h5>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
+                        </div>
 
                         <div class="col-md-4">
-                            <a data-toggle="modal" data-target="#modalMissao" href="#modalMissao">
+                            <a data-toggle="modal" data-target="#modalMissao" href="#modalMissao" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/missao.png" alt="Cardimg">
-                            </a>
+                            
                                     <div class="card-body">
                                         <h5 class="card-title">Missão e Valores</h5>
                                     </div>
                                 </div>
+                            </a>
                         </div>
 
                         <div class="col-md-4">
-                            <a data-toggle="modal" data-target="#modalMovimento" href="#modalMovimento">
+                            <a data-toggle="modal" data-target="#modalMovimento" href="#modalMovimento" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/movimento.png" alt="Cardimg">
-                            </a>
+
                                     <div class="card-body">
                                         <h5 class="card-title">Movimento Empresa Jr.</h5>
                                     </div>
                                 </div>
+                            </a>
                         </div>
 
                     </div>  
@@ -230,47 +278,47 @@
                     
                     <div class="row">
                         <div class="col-md-3">
-                            <a data-toggle="modal" data-target="#modalEstoques" href="#modalEstoques">
+                            <a data-toggle="modal" data-target="#modalEstoques" href="#modalEstoques" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/gestao-estoque.png" alt="Cardimg">
-                            </a>
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Gestão de Estoques</h5>
                                     </div>
                                 </div>
+                            </a>
                         </div>
                     
                         <div class="col-md-3">
-                            <a data-toggle="modal" data-target="#modalProcessos" href="#modalProcessos">
+                            <a data-toggle="modal" data-target="#modalProcessos" href="#modalProcessos" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/gestao-processos.png" alt="Cardimg">
-                            </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Gestão de Processos</h5>
                                     </div>
                                 </div>
+                            </a>
                         </div>
                     
                         <div class="col-md-3">
-                            <a data-toggle="modal" data-target="#modalControle" href="#modalControle">
+                            <a data-toggle="modal" data-target="#modalControle" href="#modalControle" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/automacao.png" alt="Cardimg">
-                            </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Controle e Automação</h5>
                                     </div>
                                 </div>
+                            </a>
                         </div>
 
                         <div class="col-md-3">
-                            <a data-toggle="modal" data-target="#modalPcb" href="#modalPcb">
+                            <a data-toggle="modal" data-target="#modalPcb" href="#modalPcb" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/pcb.png" alt="Cardimg">
-                            </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Prototipação de PCB</h5>
                                     </div>
                                 </div>
+                            </a>
                         </div>
                     </div> 
 
@@ -377,25 +425,25 @@
                         </div>
 
                         <div class="col-md-4">
-                            <a data-toggle="modal" data-target="#modalItalfrio" href="#modalItalfrio">
+                            <a data-toggle="modal" data-target="#modalItalfrio" href="#modalItalfrio" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/italfrio.png" alt="Cardimg">
-                            </a>
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Italfrio Refrigeração</h4>
                                     </div>
                                 </div>
+                            </a>
                         </div>
                     
                         <div class="col-md-4">
-                            <a data-toggle="modal" data-target="#modalCanastra" href="#modalCanastra">
+                            <a data-toggle="modal" data-target="#modalCanastra" href="#modalCanastra" id="no-text-effect">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="img/conteudo/grafica.png" alt="Cardimg">
-                            </a>
                                     <div class="card-body">
                                         <h4 class="card-title">Canastra Indústria Gráfica</h4>
                                     </div>
                                 </div>
+                            </a>
                         </div>
                         
                         <div class="col-md-2">
@@ -455,7 +503,7 @@
         
             <!-- Conteúdo: Contato -->
             <section class="contentSite" id="contact">
-                <div class="container-fluid">                
+                <div class="container-fluid">
                     <div class="row">
                         <!-- Informações -->
                         <div class="col-md-2"></div>
@@ -550,10 +598,8 @@
         </div>
         
 
-
-        <!-- Botão voltar ao topo e Mostrar Navbar -->
+        <!-- Botão voltar ao topo -->
         <button onclick="backToTop()" id="btnGoToTop"><i class="fa fa-home" aria-hidden="true"></i></button>
-        <button onclick="showMenu()" id="btnShowMenu"><i class="fa fa-bars" aria-hidden="true"></i></button>
         <button onclick="closeMenu()" id="btnCloseMenu"><i class="fa fa-times" aria-hidden="true"></i></button>
 
 

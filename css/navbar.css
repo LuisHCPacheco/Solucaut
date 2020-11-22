@@ -1,163 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-nav{
-    height: 100px;
-    background: #ffffff;
-}
-nav img{
-    width: 9vh;
+/* Navbar */
+#navbar{
+    z-index: 3;
     position: absolute;
-    top: 20px;
-    left: 12%;
+    background-color: #fff;
+    height: 12vh;
+    margin-top: -12vh;
 }
-#solucautIconMenu{
-    display: none;
+#iconNavbar{
+    width: 7vh;
 }
-nav ul{
-    text-align: center;
-    margin-top: 15px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 15px;
-}
-nav ul li a{
-    position: relative;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 18px;
-    border-radius: 25px;
-    text-transform: uppercase;
+.navLinks a{
     background: linear-gradient(to right, #ff5000, #ff783b);
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 1.8vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    width: 95%;
 }
-nav ul li a:hover{
+#whiteColor{
     color: #fff;
-    background: linear-gradient(to right, #ff783b, #ff783b);
-    text-decoration: none;
+}
+#whiteColor:hover{
+    color: #fff;
+    background: linear-gradient(to left, #ff783b, #ff783b);
     transition: .6s;
 }
-.navLinks{
-    margin-right: -10%;
+.navbar{
+    width: 100%;
+    overflow: auto;
 }
-#effect{
-    padding: 5px 10px;
+.navbar ul{
+    padding: 0;
+    list-style: none;
 }
-#widthIcon{
-    font-size: 30px;
-    align-items: center;
-}
-.socialMedias{
+.navbar-toggler-icon{
     float: right;
-}
-.fa-facebook{
-    margin-top: 3px;
-    margin-left: 10px;
-    margin-right: 5px;
-}
-.fa-instagram{
-    margin-top: 3px;
-    margin-left: 9px;
-    margin-right: 1px;
-}
-.fa-linkedin{
-    margin-top: 3px;
-    margin-left: 10px;
-    margin-right: 5px;
-}
-.checkIcons{
-    float: right;
-}
-#btn,
-#cancel{
-    color: #000;
-    font-size: 30px;
-    line-height: 90px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-#allContentSite{
-    display: block;
 }
 
-@media (max-width: 1700px){
-    nav img{
-        margin-left: -5%;
-        float: left;
-    }
-    .allContentSite{
-        display: block;
-    }
+/* Redes Sociais Contato Navbar */
+.socialMedias ul{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
 }
-@media (max-width: 1400px){
-    nav img{
-        margin-left: -5%;
-        float: left;
-    }
-    .allContentSite{
-        display: block;
-    }
+.socialMedias li{
+    list-style: none;
+    
+    display: inline-flex;
 }
-@media (max-width: 1250px){
-    #solucautIconMenu{
-        display: block;
-    }
-    #solucautIconNavbar{
-        display: none;
-    }
-    label #btn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(to right, #ff5000, #ff783b);
-        top: 13vh;
-        left: -100%;
-        text-align: center;
-        transition: all .6s;
-        z-index: 2;
-    }
-    nav ul li{
-        display: block;
-        margin: 6vh 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-        background: none;
-    }
-    #btnCloseMenu{
-        display: none;
-        float: right;
-        z-index: 3;
-    }
-    .navLinks{
-        margin-right: 0;
-    }
-    .socialMedias{
-        float: none;
-        text-align: center;
-    }
-    #widthIcon{
-        font-size: 35px;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    #check:checked ~ label #btn{
-        display: none;
-    }
-    #check:checked ~ label #cancel{
-        display: block;
-    }
+.socialMedias li .fa{
+    font-size: 3vh;
+    line-height: 170%;
+    color: #000;
+}
+.socialMedias li .fa{
+    color: #fff;
+}
+.socialMedias li a{
+    position: relative;
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+}
+.socialMedias li:nth-child(1) a{
+    background: linear-gradient(to right, #ff5000, #ff783b);
+}
+.socialMedias li:nth-child(2) a{
+    background: linear-gradient(to right, #ff5000, #ff783b);
+}
+.socialMedias li:nth-child(3) a{
+    background: linear-gradient(to right, #ff5000, #ff783b);
+}
+.socialMedias li:nth-child(1) a:hover{
+    background: linear-gradient(to left, #ff783b, #ff783b);
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #ff783b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    z-index: 3;
+    margin-top: 3%;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover {
+    background-color: #444;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+#socialMediasSidebar{
+    margin-top: 3%;
+}
+#socialMediasSidebar ul{
+    display: inline-flex;
+}
+#socialMediasSidebar li{
+    display: inline-flex;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
 }

@@ -7,9 +7,13 @@
 }
 
 /* Carousel */
+#carousel{
+    margin-top: 12vh;
+}
 .carousel-item{
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .carousel-caption{
     text-align: center;
@@ -17,6 +21,9 @@
     float: center;
     margin-bottom: 5%;
     z-index: 1;
+}
+#carousel-indicators{
+    z-index: 2;
 }
 
 @media (max-width: 349px){
@@ -168,6 +175,9 @@
 
 
 /* Cards dos Conteúdos */
+#no-text-effect:hover{
+    text-decoration: none;
+}
 .card-title{
     color: #000000;
     font-weight: bold;
@@ -259,18 +269,6 @@ html{
 #btnGoToTop{
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    height: 40px;
-    width: 40px;
-    color: #ffffff;
-    background: linear-gradient(to left, #ff4f00, #ff5d14);
-    border: none;
-    border-radius: 50vh;
-    display: none;    
-}
-#btnShowMenu{
-    position: fixed;
-    bottom: 70px;
     right: 20px;
     height: 40px;
     width: 40px;
