@@ -17,11 +17,11 @@ var oldScroll = window.pageYOffset;
 window.addEventListener('scroll', () => {
   var largura = window.innerWidth;
   if(largura < 992){
-    if(document.documentElement.scrollTop < 35){
+    if(document.documentElement.scrollTop <= 35){
       document.getElementById("navbar").style.position = "fixed";
       document.getElementById("navbar").style.top = "12vh";
     }
-    else{
+    else if(document.documentElement.scrollTop > 35){
       document.getElementById("navbar").style.position = "fixed";
       if (pageYOffset > oldScroll) {
         document.getElementById("navbar").style.top = "-100px";
