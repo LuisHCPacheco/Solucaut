@@ -19,6 +19,7 @@ window.addEventListener('scroll', () => {
   if(largura < 992){
     if(document.documentElement.scrollTop < 35){
       document.getElementById("navbar").style.position = "fixed";
+      document.getElementById("navbar").style.top = "12vh";
     }
     else{
       document.getElementById("navbar").style.position = "fixed";
