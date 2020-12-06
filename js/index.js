@@ -17,19 +17,12 @@ var oldScroll = window.pageYOffset;
 window.addEventListener('scroll', () => {
   var largura = window.innerWidth;
   if(largura < 992){
-    if(document.documentElement.scrollTop == 0){
-      document.getElementById("navbar").style.position = "fixed";
-      document.getElementById("navbar").style.top = "12vh";
-    }
-    else{
-      document.getElementById("navbar").style.position = "fixed";
-      if (pageYOffset > oldScroll) {
-        document.getElementById("navbar").style.top = "-100px";
+    if (pageYOffset > oldScroll) {
+        document.getElementById("navbar").style.position = "absolute";
       } else {
-        document.getElementById("navbar").style.top = "12vh";
+        document.getElementById("navbar").style.position = "fixed";
       }
       oldScroll = window.pageYOffset;
-    }
   }
   else{
     document.getElementById("navbar").style.position = "absolute";

@@ -6,6 +6,10 @@
     font-family: kelsonSans;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* Carousel */
 #carousel{
     margin-top: 12vh;
@@ -149,8 +153,6 @@
 }
 #imageContent h1{
     text-align: center;
-    align-items: center;
-    justify-content: center;
     font-size: 7vh;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -167,6 +169,7 @@
 }
 
 #imageContent p{
+    text-align: center;
     font-size: 2vh;
     letter-spacing: 2px;
     line-height: 1.9;
@@ -220,40 +223,28 @@
 /* Efeito Parallax */
 .imageParallax1{
     background-image: url(../img/image1-parallax.png);
-    text-align: center;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     color: #ffffff;
     height: auto;
 }
 .imageParallax2{
     background-image: url(../img/image2-parallax.png);
-    text-align: center;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     color: #ffffff;
     height: auto;
 }
 .imageParallax3{
     background-image: url(../img/image3-parallax.png);
-    text-align: center;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     color: #ffffff;
     height: auto;
 }
@@ -390,6 +381,40 @@ textarea:focus, input:focus, select:focus {
 /* Modal */
 .modal-title{
     text-align: center;
+}
+.modal-header h5{
+    text-align: center;
+}
+#img-modal{
+    width: 5vw;
+    margin-left: 10vw;
+}
+#img-modal2{
+    width: 5vw;
+    margin-left: 3vw;
+}
+#img-modal3{
+    width: 5vw;
+    margin-left: 8vw;
+}
+#img-modal4{
+    width: 5vw;
+    margin-left: 6vw;
+}
+#text-img-modal{
+    font-size: 2vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+#text-img-modal2{
+    font-size: 2vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+.modal-body{
+    text-align: justify;
+    margin: 1vh 1vw;
 }
 
 

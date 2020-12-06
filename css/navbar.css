@@ -1,11 +1,10 @@
 /* Navbar */
 #navbar{
     z-index: 3;
-    position: fixed;
+    position: absolute;
     background-color: #fff;
+    height: 12vh;
     margin-top: -12vh;
-    display: block;
-  transition: top 0.5s;
 }
 #iconNavbar{
     width: 7vh;
