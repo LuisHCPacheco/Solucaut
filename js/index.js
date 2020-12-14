@@ -4,7 +4,7 @@ window.onscroll = function(){
 }
 
 function openNav(){
-    document.getElementById("mySidebar").style.width = "100vw";
+    document.getElementById("mySidebar").style.width =  "100vw";
     document.getElementById("main").style.marginLeft = "100vw";
 }
 

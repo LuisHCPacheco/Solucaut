@@ -9,6 +9,9 @@
 .text-center{
     text-align: center;
 }
+#boldText{
+    font-weight: bold;
+}
 
 /* Carousel */
 #carousel{
@@ -378,37 +381,9 @@ textarea:focus, input:focus, select:focus {
 }
 
 
-/* Modal */
-.modal-title{
-    text-align: center;
-}
-.modal-header h5{
-    text-align: center;
-}
-#img-modal{
-    width: 5vw;
-    margin-left: 10vw;
-}
-#img-modal2{
-    width: 5vw;
-    margin-left: 3vw;
-}
-#img-modal3{
-    width: 5vw;
-    margin-left: 8vw;
-}
-#img-modal4{
-    width: 5vw;
-    margin-left: 6vw;
-}
-#text-img-modal{
-    font-size: 2vw;
-    margin-top: 2vh;
-    margin-left: 1vw;
-}
-#text-img-modal2{
-    font-size: 2vw;
-    margin-top: 2vh;
+/* Titulo Modal */
+#modal-title{
+    font-size: 4vh;
     margin-left: 1vw;
 }
 

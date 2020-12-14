@@ -47,7 +47,7 @@
                                     <a class="nav-link" href="#contact" id="whiteColor">Contato</a>
                                 </li>
                                 <li class="nav-item mt-1">
-                                    <a class="nav-link" href="#" id="whiteColor">Blog</a>
+                                    <a class="nav-link" data-toggle="modal" data-target="#modalAvisoBlog" id="whiteColor">Blog</a>
                                 </li>
                             </ul>
     
@@ -75,7 +75,8 @@
                     <a href="#services" onclick="closeNav()">Nossos Serviços</a>
                     <a href="#cases" onclick="closeNav()">Cases</a>
                     <a href="#contact" onclick="closeNav()">Contato</a>
-                    <a href="#" onclick="closeNav()">Blog</a>
+                    <a data-toggle="modal" data-target="#modalAvisoBlog" id="whiteColor" onclick="closeNav()">Blog</a>
+                    <!-- <a data-toggle="modal" data-target="#modalAvisoBlog" href="#modalAvisoBlog" onclick="closeNav()">Blog</a> -->
 
                     <center>
                     <ul id="socialMediasSidebar">
@@ -94,10 +95,28 @@
                     </center>
                 </div>
             </nav>
+            <!-- Modal Aviso Blog -->
+            <div class="modal fade" id="modalAvisoBlog" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="modal-title"> BLOG EM DESENVOLVIMENTO!</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Nossa equipe está desenvolvendo o blog para ficar anexado ao site!</p>
+                        <p>Para saber em primeira mão quando o blog for ao ar, acompanhe nossas redes sociais!</p>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
 
 
         <div id="allContentSite">
+
             <!-- Carousel -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators" id="carousel-indicators">
@@ -194,17 +213,20 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title">Nossa História</h5> -->
-                                <img id="img-modal" src="./img/icon.png"><span id="text-img-modal"> Nossa História</span>
+                                <span id="modal-title"> Nossa História</span>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                Fundada por 6 alunos no dia 17 de março de 2016, a Solucaut, Empresa Júnior dos cursos de Engenharia de Controle e Automação e Engenharia Eletrônica, conta atualmente com 28 membros, divididos em quatro diretorias: 
-                                Presidência, Administrativo, Projetos e Comercial. 
-                                Foi em outubro de 2019 que a Solucaut obteve seu primeiro projeto, e em novembro do mesmo ano iniciou uma ampla reestruturação interna tanto em seus processos e metodologias de projeto, como na sua parte técnica e de ferramentas. Foi com este amplo processo que a Solucaut em janeiro de 2020 assinou o seu maior projeto, um grande desafio que exigiu muito de todos os times. 
-                                Quem faz parte da Solucaut hoje lida com gestões, projetos, prospecções, liderança e trabalho em equipe, tem acesso a diversos tipos de ferramentas, cursos de capacitação e participação em eventos, pensando em agregar experiência e desenvolvimento profissional aos integrantes da empresa.
+                                <p>
+                                    Fundada por 6 alunos no dia 17 de março de 2016, a Solucaut, Empresa Júnior dos cursos de Engenharia de Controle e Automação e Engenharia Eletrônica, conta atualmente com 28 membros, divididos em quatro diretorias: 
+                                    Presidência, Administrativo, Projetos e Comercial. 
+                                </p>
+                                <p>
+                                    Foi em outubro de 2019 que a Solucaut obteve seu primeiro projeto, e em novembro do mesmo ano iniciou uma ampla reestruturação interna tanto em seus processos e metodologias de projeto, como na sua parte técnica e de ferramentas. Foi com este amplo processo que a Solucaut em janeiro de 2020 assinou o seu maior projeto, um grande desafio que exigiu muito de todos os times. 
+                                    Quem faz parte da Solucaut hoje lida com gestões, projetos, prospecções, liderança e trabalho em equipe, tem acesso a diversos tipos de ferramentas, cursos de capacitação e participação em eventos, pensando em agregar experiência e desenvolvimento profissional aos integrantes da empresa.
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -215,54 +237,65 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <!-- <h5 class="modal-title">Missão e Valores</h5> -->
-                            <img id="img-modal" src="./img/icon.png"><span id="text-img-modal"> Missão e Valores</span>
+                            <span id="modal-title"> Missão e Valores</span>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
                             <div class="modal-body">
-                                A missão da Solucaut é promover as melhores soluções personalizadas e inovadoras de engenharia visando automatizar e otimizar processos. 
-                                Sua visão é ser a empresa júnior brasileira referência em automação e eletrônica.
-                                Seus valores são: União, Profissionalismo, Pertencimento, Experiências, Conhecimento, Respeito.
+                                <p> A missão da Solucaut é promover as melhores soluções personalizadas e inovadoras de engenharia visando automatizar e otimizar processos. </p>
+                                <p> Sua visão é ser a empresa júnior brasileira referência em automação e eletrônica. </p>
+                                <p> Seus valores são: União, Profissionalismo, Pertencimento, Experiências, Conhecimento, Respeito. </p>
                             </div>
                         </div>
                         </div>
                     </div>
 
-                    <!-- Modal Empresa -->
+                    <!-- Modal Movimento Empresa Jr. -->
                     <div class="modal fade" id="modalMovimento" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title">Movimento empresa Jr.</h5> -->
-                                <img id="img-modal" src="./img/icon.png"><span id="text-img-modal"> Movimento Empresa Jr.</span>
+                                <span  id="modal-title"> Movimento Empresa Jr.</span>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                Surgimento do MEJ: 
-                                O MEJ, mais conhecido como Movimento Empresa Júnior, foi fundado no início de 1967 em uma Universidade na França, mais conhecida como Escola Superior de Ciências Econômicas e Comerciais de Paris. Ao longo dos anos o Movimento foi se espalhando mundo afora até que em 1987 a Câmara de Comércio França-Brasil, conseguiu por meio de uma convocação trazer o MEJ para o Brasil.
-                                Logo no ano seguinte, a EJFGV foi fundada como a primeira Empresa Júnior no Brasil, localizada na FGV (Fundação Getúlio Vargas). E com isso outros graduandos se interessaram pela ideia, resultando no surgimento de diversas Empresas Juniores.
-                                Nos últimos anos, um estudo mostrou que ao longo do tempo surgiram 311 empresas e um total de mais de 11 mil membros de empresas juniores no Brasil, tornando assim o país com mais EJs no mundo. 
+                                <h4>Surgimento do MEJ:</h4> 
+                                <p>
+                                    O MEJ, mais conhecido como Movimento Empresa Júnior, foi fundado no início de 1967 em uma Universidade na França, mais conhecida como Escola Superior de Ciências Econômicas e Comerciais de Paris. Ao longo dos anos o Movimento foi se espalhando mundo afora até que em 1987 a Câmara de Comércio França-Brasil, conseguiu por meio de uma convocação trazer o MEJ para o Brasil.
+                                    Logo no ano seguinte, a EJFGV foi fundada como a primeira Empresa Júnior no Brasil, localizada na FGV (Fundação Getúlio Vargas). E com isso outros graduandos se interessaram pela ideia, resultando no surgimento de diversas Empresas Juniores.
+                                    Nos últimos anos, um estudo mostrou que ao longo do tempo surgiram 311 empresas e um total de mais de 11 mil membros de empresas juniores no Brasil, tornando assim o país com mais EJs no mundo. 
+                                </p>
 
-                                Objetivos: 
-                                O Movimento tem como objetivo principal promover conhecimentos de como gerenciar e atuar em uma Empresa. Vale ressaltar que os membros envolvidos nelas não possuem salários, fazendo com que o lucro total vá para treinamentos e investimentos dentro da Organização. 
-                                Ademais, um membro que já fez parte de uma Empresa Júnior possui vantagem em seu currículo na busca de emprego e até mesmo estágio.
+                                <h4>Objetivos:</h4> 
+                                <p>
+                                    O Movimento tem como objetivo principal promover conhecimentos de como gerenciar e atuar em uma Empresa. Vale ressaltar que os membros envolvidos nelas não possuem salários, fazendo com que o lucro total vá para treinamentos e investimentos dentro da Organização. 
+                                    Ademais, um membro que já fez parte de uma Empresa Júnior possui vantagem em seu currículo na busca de emprego e até mesmo estágio.
+                                </p>
 
-                                Instâncias do MEJ:
-                                Atualmente existem três Instâncias no Brasil, e essas Instâncias são entidades atuantes em Universidades e regiões de todo o país. Elas possuem objetivos como : 
-                                ●	Ser Referência;
-                                ●	Ampliar sua rede;
-                                ●	Aumentar e desenvolver o Movimento Empresa Júnior;
+                                <h4>Instâncias do MEJ:</h4>
+                                <p>Atualmente existem três Instâncias no Brasil, e essas Instâncias são entidades atuantes em Universidades e regiões de todo o país. Elas possuem objetivos como : </p>
+                                <p>●	Ser Referência;</p>
+                                <p>●	Ampliar sua rede;</p>
+                                <p>●	Aumentar e desenvolver o Movimento Empresa Júnior;</p>
 
 
-                                Brasil Júnior : Responsável por representar todas as Empresas Juniores do país. Tem como objetivo transmitir e propor regras para as Federações Estaduais, para assim regulamentar as atividades das EJs no Brasil. Entretanto, seu principal objetivo é formar profissionais que sejam comprometidos com o mercado de trabalho e sua função .
+                                <h4>Brasil Júnior : </h4>
+                                <p>
+                                    Responsável por representar todas as Empresas Juniores do país. Tem como objetivo transmitir e propor regras para as Federações Estaduais, para assim regulamentar as atividades das EJs no Brasil. Entretanto, seu principal objetivo é formar profissionais que sejam comprometidos com o mercado de trabalho e sua função .
+                                </p>
 
-                                Federações Estaduais:  Responsável por atuar em região/ domínio estadual. Ou seja, ao todo existem 27 federações brasileiras ( 26 estados + Distrito Federal).
+                                <h4>Federações Estaduais: </h4> 
+                                <p>
+                                    Responsável por atuar em região/ domínio estadual. Ou seja, ao todo existem 27 federações brasileiras ( 26 estados + Distrito Federal).
+                                </p>
 
-                                Núcleos:  Responsáveis por representar as empresas juniores de uma cidade ou instituição em específico. Possuem funções parecidas com as da Federação.
+                                <h4>Núcleos: </h4> 
+                                <p>
+                                    Responsáveis por representar as empresas juniores de uma cidade ou instituição em específico. Possuem funções parecidas com as da Federação.
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -335,17 +368,24 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title">Gestão de Estoques e Processos</h5> -->
-                                <img id="img-modal2" src="./img/icon.png"><span id="text-img-modal2"> Gestão de Estoques e Processos</span>
+                                <span  id="modal-title"> Gestão de Estoques e Processos</span>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                Com o mercado cada vez mais globalizado e marcado pela alta competitividade, conseguir se destacar é um dos maiores desafios enfrentados pelas empresas atualmente. Na busca pela vantagem competitiva, conseguir atender às demandas dos clientes no momento e na quantidade certa pode significar um diferencial decisivo para o sucesso. 
-                                Para que isso aconteça, o estoque é um dos aspectos de negócio que merece atenção especial. A má gestão deste setor pode colocar em risco a sobrevivência da sua empresa.
-                                Desse modo, a gestão de estoque feita pela Solucaut tem como objetivo satisfazer as demandas sem a ocorrência de excessos e perdas provenientes de rotatividade variada, roubos e perdas por depreciação (produtos estagnados) e vencimento de prazo de validade.
-                                Já a gestão de processos tem como objetivo otimizar processo do dia a dia empresarial, para que os objetivos sejam alcançados de forma coesa e organizada
+                                <p>
+                                    Com o mercado cada vez mais globalizado e marcado pela alta competitividade, conseguir se destacar é um dos maiores desafios enfrentados pelas empresas atualmente. Na busca pela vantagem competitiva, conseguir atender às demandas dos clientes no momento e na quantidade certa pode significar um diferencial decisivo para o sucesso. 
+                                </p>
+                                <p>
+                                    Para que isso aconteça, o estoque é um dos aspectos de negócio que merece atenção especial. A má gestão deste setor pode colocar em risco a sobrevivência da sua empresa.
+                                </p>
+                                <p>
+                                    Desse modo, a gestão de estoque feita pela Solucaut tem como objetivo satisfazer as demandas sem a ocorrência de excessos e perdas provenientes de rotatividade variada, roubos e perdas por depreciação (produtos estagnados) e vencimento de prazo de validade.
+                                </p>
+                                <p>
+                                    Já a gestão de processos tem como objetivo otimizar processo do dia a dia empresarial, para que os objetivos sejam alcançados de forma coesa e organizada
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -356,14 +396,31 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title">Solução de Controle, Automação e Eletrônica</h5> -->
-                                <img id="img-modal2" src="./img/icon.png"><span id="text-img-modal2"> Controle e Automação</span>
+                                <span  id="modal-title"> Controle e Automação</span>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <center>Conteúdo solução de Controle, Automação e Eletrônica</center>
+                                <h4>O que é Controle e Automação?</h4>
+                                <p>
+                                    Atualmente vivemos em um mundo em que a tecnologia vem crescendo cada vez mais e com ela novos modos de produção e trabalho. Sendo assim, surgiu o profissional de Controle e Automação que tem como responsabilidade desenvolver, projetar e gerenciar equipamentos que serão utilizados e processos de produção para diversas indústrias.
+                                </p>
+                                <p>Em suma, uma empresa que adota processos de Controle e Automação pode se destacar no mercado, pois terá: </p>
+
+                                <p>●	Aumento na produtividade;</p>
+                                <p>●	Uma melhor qualidade do produto;</p>
+                                <p>●	Diminuição de custos;</p>
+                                <p>●	Ter um maior controle e monitoramento das máquinas;</p>
+                                <p>●	Aumento na segurança dos funcionários e do bem-estar da empresa;</p>
+                                <br>
+                                <h4>Projetos de Controle e Automação na Solucaut:</h4>
+                                <p>
+                                    Com isso percebe-se que cada empresa tem seus próprios objetivos diante o mercado e, portanto, necessidades diferentes e específicas surgem. Visando essa nova fase da Indústria 4.0 e a alta demanda por automação, a Solucaut busca oferecer projetos voltados para automação de processos para a sua empresa. Sempre proporcionando projetos de qualidade e com uma maior facilidade de interação de usuário, a Solucaut se prontifica e se disponibiliza a te ajudar a melhorar o seu negócio, e a se destacar no mercado em que sua empresa está inserida. 
+                                </p>
+                                <p>
+                                    Além disso, a Solucaut se oferece para visitar a sua empresa para assim poder inspecionar e realizar um diagnóstico, visando entregar produtos de qualidade voltados para o ambiente em que será instalado.
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -374,17 +431,21 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title">Curso Prototipação de PCB</h5> -->
-                                <img id="img-modal3" src="./img/icon.png"><span id="text-img-modal2"> Prototipação de PCB</span>
+                                <span id="modal-title"> Prototipação de PCB</span>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                A PCB (printed circuit board ou placa de circuito impresso) é o componente básico da placa-mãe, suporta mecanicamente componentes electrónicos que estão eletricamente ligados com a ajuda de vias condutoras, possuindo traços gravados a partir de folhas de cobre.
-
-                                Entre as tecnologias mais procuradas do mercado a placa eletrônica de circuito impresso possui grande destaque, devido a sua ampla aplicabilidade, que vai desde controles remotos, painéis de controle, computadores e até maquinários da linha de produção que atende a diversos segmentos. 
-                                Com base, em toda essa aplicabilidade a Solucaut fornece o curso de Prototipação de PCB, com objetivo de ensinar as etapas de fabricação de um circuito impresso. Indo desde a modelagem e impressão do circuito até a finalização. Atualmente o curso é ofertado ser ofertado para escolas e universidades.
+                                <p>
+                                    A PCB (printed circuit board ou placa de circuito impresso) é o componente básico da placa-mãe, suporta mecanicamente componentes electrónicos que estão eletricamente ligados com a ajuda de vias condutoras, possuindo traços gravados a partir de folhas de cobre.
+                                </p>
+                                <p>
+                                    Entre as tecnologias mais procuradas do mercado a placa eletrônica de circuito impresso possui grande destaque, devido a sua ampla aplicabilidade, que vai desde controles remotos, painéis de controle, computadores e até maquinários da linha de produção que atende a diversos segmentos.
+                                </p>
+                                <p>
+                                    Com base, em toda essa aplicabilidade a Solucaut fornece o <span id="boldText">curso de Prototipação de PCB</span>, com objetivo de ensinar as etapas de fabricação de um circuito impresso. Indo desde a modelagem e impressão do circuito até a finalização. Atualmente o curso é ofertado ser ofertado para escolas e universidades.
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -453,16 +514,21 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title">Italfrio Refrigeração</h5> -->
-                                <img id="img-modal3" src="./img/icon.png"><span id="text-img-modal2"> Italfrio Refrigeração</span>
+                                <span id="modal-title"> Italfrio Refrigeração</span>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                A Refrigeração Italfrio, localizada em Cornélio Procópio, região norte do Paraná, está há anos no mercado atuando na área de sistemas de climatização. E nosso projeto com esta empresa surgiu diante de uma dificuldade deles em gestão de estoque e fluxo de caixa, no qual havia muitos produtos travados em estoque, desorganizados e sem retorno de lucratividade.  
-                                Visto isso, a Solucaut montou um plano de ação onde organizamos, mapeamos, classificamos todos os produtos e cadastramos com códigos e preços em um sistema de fácil acesso e utilização por parte dos operadores da empresa. Além disso, montamos um manual de e-commerce para o nosso cliente, onde eles poderiam colocar em circulação todas as peças que estavam estagnadas em estoque. 
-                                Agradecemos pela confiança da Italfrio e nos dedicar este projeto que para nós teve uma importância enorme, pois eles foram o nosso primeiro cliente e case de sucesso que conquistamos, recebemos nota máxima na avaliação durante todo o processo. Desejamos todo sucesso a Italfrio!
+                                <p>
+                                    A Refrigeração Italfrio, localizada em Cornélio Procópio, região norte do Paraná, está há anos no mercado atuando na área de sistemas de climatização. E nosso projeto com esta empresa surgiu diante de uma dificuldade deles em gestão de estoque e fluxo de caixa, no qual havia muitos produtos travados em estoque, desorganizados e sem retorno de lucratividade. 
+                                </p>
+                                <p>
+                                    Visto isso, a Solucaut montou um plano de ação onde organizamos, mapeamos, classificamos todos os produtos e cadastramos com códigos e preços em um sistema de fácil acesso e utilização por parte dos operadores da empresa. Além disso, montamos um manual de e-commerce para o nosso cliente, onde eles poderiam colocar em circulação todas as peças que estavam estagnadas em estoque.
+                                </p>
+                                <p>
+                                    Agradecemos pela confiança da Italfrio e nos dedicar este projeto que para nós teve uma importância enorme, pois eles foram o nosso primeiro cliente e case de sucesso que conquistamos, recebemos nota máxima na avaliação durante todo o processo. Desejamos todo sucesso a Italfrio!
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -473,16 +539,21 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title">Canastra Indústria Gráfica</h5> -->
-                                <img id="img-modal4" src="./img/icon.png"><span id="text-img-modal2"> Canastra Indústria Gráfica</span>
+                                <span id="modal-title"> Canastra Indústria Gráfica</span>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                A Indústria Gráfica Canastra, localizada em São José do Rio Preto – SP, atua na produção de embalagens e caixas, através de impressões off-set, corte, vinco e colagem. O projeto com a Gráfica surgiu diante da necessidade de otimizar processos que anteriormente eram manuais, aumentar a produção, facilitar o trabalho dos operadores, e a redução dos custos. 
-                                Desse modo, a Solucaut elaborou um projeto de Engenharia completamente personalizado para uma máquina da indústria. No primeiro momento apresentamos um protótipo funcional com um ciclo continuo, desde a abertura, dobra, passagem de cola, e retirada, para depois aplicarmos diretamente na máquina. Com isso, somente um operador passou acompanhar todo o processo de produção. Em seguida entregamos um manual completo, contendo todas as informações sobre cada seguimento da máquina, com informações da parte automatizada, elétrica, mecânica, manutenção, manuseio e de segurança. 
-                                Este é o maior projeto que concluímos até o momento. Além disso, nos forneceu muita experiência e aprendizado para toda equipe. O projeto foi aprovado por nosso cliente e desejamos muito sucesso a Indústria! 
+                                <p>
+                                    A Indústria Gráfica Canastra, localizada em São José do Rio Preto – SP, atua na produção de embalagens e caixas, através de impressões off-set, corte, vinco e colagem. O projeto com a Gráfica surgiu diante da necessidade de otimizar processos que anteriormente eram manuais, aumentar a produção, facilitar o trabalho dos operadores, e a redução dos custos. 
+                                </p>
+                                <p>
+                                    Desse modo, a Solucaut elaborou um projeto de Engenharia completamente personalizado para uma máquina da indústria. No primeiro momento apresentamos um protótipo funcional com um ciclo continuo, desde a abertura, dobra, passagem de cola, e retirada, para depois aplicarmos diretamente na máquina. Com isso, somente um operador passou acompanhar todo o processo de produção. Em seguida entregamos um manual completo, contendo todas as informações sobre cada seguimento da máquina, com informações da parte automatizada, elétrica, mecânica, manutenção, manuseio e de segurança.
+                                </p>
+                                <p>
+                                    Este é o maior projeto que concluímos até o momento. Além disso, nos forneceu muita experiência e aprendizado para toda equipe. O projeto foi aprovado por nosso cliente e desejamos muito sucesso a Indústria! 
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -541,7 +612,7 @@
                                 <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true" id="whiteIconInput"></i><input type="email" class="orangeForm" placeholder="Email *" id="sizeForm" name="email" required></span>
                                 <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-phone" aria-hidden="true" id="whiteIconInput"></i><input type="text" class="orangeForm" placeholder="Telefone" id="sizeForm" name="phoneNumber" ></span>
                                 <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-comment-o" aria-hidden="true" id="whiteIconInput"></i><input type="text" class="orangeForm" placeholder="Assunto *" id="sizeForm" name="subject" required></span>
-                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-commenting-o" aria-hidden="true" id="whiteIconInput"></i><textarea type="text" class="orangeForm" placeholder="Mensagem *" id="sizeForm" name="mesage" required></textarea></span>
+                                <span class="input-group-text inputOrange mt-2" id="basic-addon1"><i class="fa fa-commenting-o" aria-hidden="true" id="whiteIconInput"></i><textarea type="text" class="orangeForm" placeholder="Mensagem *" id="sizeForm" name="message" required></textarea></span>
                             </center>
                                 <button type="submit" class="btn efeitobtn mt-2" id="orangeColor"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>  Enviar</button>
                             </form>
