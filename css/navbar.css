@@ -1,12 +1,5 @@
 /* Navbar */
 #navbar{
-    /* z-index: 3;
-    position: absolute;
-    background-color: #fff;
-    height: 12vh;
-    margin-top: -12vh;
-    transition: .5s; */
-
     z-index: 3;
     background-color: #fff;
     position: absolute;
@@ -44,6 +37,9 @@
 .navbar ul{
     padding: 0;
     list-style: none;
+}
+#navbar-toggler{
+    display: block;
 }
 .navbar-toggler-icon{
     float: right;
@@ -96,17 +92,17 @@
 
 
 .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
     z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #ff783b;
-    overflow: hidden;
+    overflow: auto;
     transition: 0.5s;
     padding-top: 60px;
-  }
+}
 .sidebar a {
     padding: 0px 0px 10px 0px;
     text-decoration: none;

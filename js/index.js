@@ -9,13 +9,12 @@ function backToTop(){
 
 function openNav(){
     document.getElementById("mySidebar").style.width =  "100vw";
-    document.getElementById("main").style.marginLeft = "100vw";
-    $(window).scrollTop(0);
+    document.getElementById("main").style.marginLeft = "100vh";
 }
 
 function closeNav(){
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("main").style.marginLeft= "0"; 
 }
 
 var prevScrollpos = window.pageYOffset;
@@ -39,47 +38,6 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
-
-
-
-// //Aparecer navbar
-// $(window).scroll(function(){
-//     $('nav').toggleClass('scrolled', $(this).scrollTop() > 400);
-// });
-
-
-//Animação do conteúdo
-const debounce = function(func, wait, immediate){
-    let timeout;
-    return function(...args){
-        const context = this;
-        const later = function(){
-            timeout = null;
-            if(!immediate) func.apply(context, args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if(callNow) func.apply(context, args);
-    };
-};
-
-const target = document.querySelectorAll('[data-anime');
-const animationClass = 'animate';
-
-function animeOnScroll(){
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3)/3.4);
-    target.forEach(function(element){
-        if((windowTop) > element.offsetTop){
-            element.classList.add(animationClass);
-        }
-        else{
-            element.classList.remove(animationClass);
-        }
-    })
-}
-
-animeOnScroll();
 
 if(target.length){
     window.addEventListener('scroll', debounce(function(){
