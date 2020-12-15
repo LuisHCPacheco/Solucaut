@@ -1,10 +1,19 @@
 /* Navbar */
 #navbar{
-    z-index: 3;
+    /* z-index: 3;
     position: absolute;
     background-color: #fff;
     height: 12vh;
     margin-top: -12vh;
+    transition: .5s; */
+
+    z-index: 3;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: 0.3s;
 }
 #iconNavbar{
     width: 7vh;
@@ -94,7 +103,7 @@
     top: 0;
     left: 0;
     background-color: #ff783b;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }

@@ -3,9 +3,14 @@ window.onscroll = function(){
     scroll();
 }
 
+function backToTop(){
+    document.documentElement.scrollTop = 0;
+}
+
 function openNav(){
     document.getElementById("mySidebar").style.width =  "100vw";
     document.getElementById("main").style.marginLeft = "100vw";
+    $(window).scrollTop(0);
 }
 
 function closeNav(){
@@ -13,42 +18,34 @@ function closeNav(){
     document.getElementById("main").style.marginLeft= "0";
 }
 
-var oldScroll = window.pageYOffset;
-window.addEventListener('scroll', () => {
-  var largura = window.innerWidth;
-  if(largura < 992){
-    if (pageYOffset > oldScroll) {
-        document.getElementById("navbar").style.position = "absolute";
-      } else {
-        document.getElementById("navbar").style.position = "fixed";
-      }
-      oldScroll = window.pageYOffset;
-  }
-  else{
-    document.getElementById("navbar").style.position = "absolute";
-  }
-})
-
-function scroll(){
-    let btn = document.getElementById("btnGoToTop");
-    let nav = document.getElementById("navbar");
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
     var largura = window.innerWidth;
-    if(document.documentElement.scrollTop > 50){
+    let btn = document.getElementById("btnGoToTop");
+
+    var largura = window.innerWidth;
+    if(prevScrollpos > 50){
         btn.style.display = "block";
     }
     else{
         btn.style.display = "none";
     }
-}
-function backToTop(){
-    document.documentElement.scrollTop = 0;
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.position="fixed";
+    } else {
+    document.getElementById("navbar").style.top = "-120px";
+    }
+    prevScrollpos = currentScrollPos;
 }
 
 
-//Aparecer navbar
-$(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 400);
-});
+
+// //Aparecer navbar
+// $(window).scroll(function(){
+//     $('nav').toggleClass('scrolled', $(this).scrollTop() > 400);
+// });
 
 
 //Animação do conteúdo
